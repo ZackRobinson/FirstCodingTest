@@ -31,13 +31,18 @@ public class CodingTest {
         stringArrayList.add("E");
 
         String s;
+        int dup = 0;
         int i;
         for (i = 0; i < stringArrayList.size(); i++) {
             s = stringArrayList.get(i);
-            for (int x = 0; i < stringArrayList.size(); i++)
-                if (s == stringArrayList.get(i)) {
-                    System.out.println(s);
+            for (int x = 0; x < stringArrayList.size(); x++)
+                if (s == stringArrayList.get(x)) {
+                    dup++;
+                    if (dup > 1) {
+                        System.out.println(s);
+                    }
                 }
+            dup = 0;
         }
     }
 }
