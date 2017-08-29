@@ -23,7 +23,6 @@ public class CodingTest {
 
         //problem 2
         ArrayList<String> stringArrayList = new ArrayList<>();
-
         stringArrayList.add("A");
         stringArrayList.add("B");
         stringArrayList.add("C");
