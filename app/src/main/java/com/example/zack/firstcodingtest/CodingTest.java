@@ -10,15 +10,16 @@ public class CodingTest {
     public static void main(String[] args) {
 
         //problem 1
-        int num = 15;
-        if (num % 3 == 0) {
-            System.out.println("fizz");
-        } else if (num % 5 == 0) {
-            System.out.println("buzz");
-        } else if ((num % 3 == 0) && (num % 5 == 0)) {
-            System.out.println("fizz buzz");
+        for (int num = 0; num <= 20; num++) {
+            System.out.println(num);
+            if ((num % 3 == 0) && (num % 5 == 0)) {
+                System.out.println("fizz buzz");
+            } else if (num % 5 == 0) {
+                System.out.println("buzz");
+            } else if (num % 3 == 0) {
+                System.out.println("fizz");
+            }
         }
-
 
         //problem 2
         ArrayList<String> stringArrayList = new ArrayList<>();
@@ -29,6 +30,7 @@ public class CodingTest {
         stringArrayList.add("D");
         stringArrayList.add("D");
         stringArrayList.add("E");
+        stringArrayList.add("B");
 
         String s;
         int dup = 0;
@@ -43,6 +45,7 @@ public class CodingTest {
                     }
                 }
             dup = 0;
+
         }
     }
 }
